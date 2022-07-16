@@ -37,13 +37,13 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.passTX = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.signBTN = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.userTX = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -156,18 +156,19 @@
             this.pictureBox6.TabIndex = 10;
             this.pictureBox6.TabStop = false;
             // 
-            // textBox3
+            // passTX
             // 
-            this.textBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(496, 292);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(234, 19);
-            this.textBox3.TabIndex = 11;
-            this.textBox3.Text = "Contraseña";
+            this.passTX.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.passTX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.passTX.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passTX.ForeColor = System.Drawing.Color.Black;
+            this.passTX.Location = new System.Drawing.Point(496, 292);
+            this.passTX.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.passTX.Name = "passTX";
+            this.passTX.PasswordChar = '*';
+            this.passTX.Size = new System.Drawing.Size(234, 19);
+            this.passTX.TabIndex = 11;
+            this.passTX.Tag = "Contraseña";
             // 
             // label2
             // 
@@ -181,20 +182,20 @@
             this.label2.Size = new System.Drawing.Size(103, 24);
             this.label2.TabIndex = 12;
             this.label2.Text = "Contraseña";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // button2
+            // signBTN
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Baskerville Old Face", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Blue;
-            this.button2.Location = new System.Drawing.Point(520, 328);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(182, 48);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Iniciar Sesión";
-            this.button2.UseVisualStyleBackColor = true;
+            this.signBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.signBTN.Font = new System.Drawing.Font("Baskerville Old Face", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signBTN.ForeColor = System.Drawing.Color.Blue;
+            this.signBTN.Location = new System.Drawing.Point(520, 328);
+            this.signBTN.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.signBTN.Name = "signBTN";
+            this.signBTN.Size = new System.Drawing.Size(182, 48);
+            this.signBTN.TabIndex = 13;
+            this.signBTN.Text = "Iniciar Sesión";
+            this.signBTN.UseVisualStyleBackColor = true;
+            this.signBTN.Click += new System.EventHandler(this.signBTN_Click);
             // 
             // linkLabel1
             // 
@@ -222,7 +223,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label3
             // 
@@ -236,20 +236,19 @@
             this.label3.Size = new System.Drawing.Size(327, 63);
             this.label3.TabIndex = 15;
             this.label3.Text = "Wenas Tardes Tv";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox2
+            // userTX
             // 
-            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(496, 220);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(234, 19);
-            this.textBox2.TabIndex = 16;
-            this.textBox2.Text = "Correo Electrónico";
+            this.userTX.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.userTX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.userTX.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userTX.ForeColor = System.Drawing.Color.Black;
+            this.userTX.Location = new System.Drawing.Point(496, 220);
+            this.userTX.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.userTX.Name = "userTX";
+            this.userTX.Size = new System.Drawing.Size(234, 19);
+            this.userTX.TabIndex = 16;
+            this.userTX.Tag = "Correo Electrónico";
             // 
             // Form1
             // 
@@ -257,12 +256,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(838, 476);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.userTX);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.signBTN);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.passTX);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -279,7 +278,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "ITLA Chrome";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -300,13 +298,13 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox passTX;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button signBTN;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox userTX;
     }
 }
 

@@ -6,6 +6,7 @@ using System.Windows.Forms;
 
 namespace InterfazGrafica
 {
+
     internal static class Program
     {
         /// <summary>
@@ -16,7 +17,12 @@ namespace InterfazGrafica
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new InterfazGrafica.Form1());
         }
+    }
+
+    internal class InterfazLogin
+    {
+
     }
 }

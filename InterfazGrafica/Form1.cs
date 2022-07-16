@@ -17,33 +17,25 @@ namespace InterfazGrafica
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void signBTN_Click(object sender, EventArgs e)
         {
+            using(var con= new conEntity())
+            {
 
-        }
+                    var usEx = from us in con.Users where us.username == userTX.Text && us.passw == passTX.Text select us;
+                    if(usEx.Count() > 0)
+                    {
+                        MessageBox.Show("La session del usuario " + userTX.Text + " se inició correctamente");
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se encontró al usuario " + userTX.Text+" : Verifique su nombre de usuario o contraseña");
+                    }
+                   
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
+                
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+            }
 
         }
     }
